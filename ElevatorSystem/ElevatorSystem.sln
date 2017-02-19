@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ElevatorSystem", "ElevatorSystem\ElevatorSystem.vcxproj", "{EDDC795C-5F71-44A4-94B2-A88B05C2BFCF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EDDC795C-5F71-44A4-94B2-A88B05C2BFCF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EDDC795C-5F71-44A4-94B2-A88B05C2BFCF}.Debug|Win32.Build.0 = Debug|Win32
+		{EDDC795C-5F71-44A4-94B2-A88B05C2BFCF}.Release|Win32.ActiveCfg = Release|Win32
+		{EDDC795C-5F71-44A4-94B2-A88B05C2BFCF}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
