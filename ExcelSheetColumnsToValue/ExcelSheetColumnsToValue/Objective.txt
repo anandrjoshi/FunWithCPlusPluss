@@ -1,0 +1,8 @@
+
+WAP to return numbered index if input is excel sheet column header name.
+e.g 
+excel sheet column headers are A, B, C , D ... Z, AA, AB...AZ, BA,, etc
+if Input is D , output should be 4
+and for AA output should be 27
+
+Also consider upper case and lower case of column names.

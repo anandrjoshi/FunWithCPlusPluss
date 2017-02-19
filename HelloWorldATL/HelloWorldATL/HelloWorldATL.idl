@@ -1,0 +1,35 @@
+// HelloWorldATL.idl : IDL source for HelloWorldATL
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (HelloWorldATL.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(C4644D3D-C860-4060-986B-1BDE8DE8E21A),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface IHelloWorldBHO : IDispatch{
+};
+[
+	uuid(082A7DE4-6FE3-4D39-8F6F-853BFBF1D7DE),
+	version(1.0),
+]
+library HelloWorldATLLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(97671DD7-61DA-4282-A327-DCD15F24D335)		
+	]
+	coclass HelloWorldBHO
+	{
+		[default] interface IHelloWorldBHO;
+	};
+};
+
+import "shobjidl.idl";

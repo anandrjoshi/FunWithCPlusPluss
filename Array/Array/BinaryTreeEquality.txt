@@ -1,0 +1,24 @@
+Psuedocaode to check if two binary trees are same.
+
+
+//my solution. Assuming that the binary tree has integers.	
+Check_Equal(Node * tree1, Node * tree2)
+	int inorder_tree1[] = Inorder(tree1)
+	
+	int inorder_tree2[] = Inorder(tree2)
+	
+	//ensures length and order is correct.
+	if(inorder_tree1 != inorder_tree2)
+		return false
+	
+	int breadth_first1[] = Breadth_first_traversal(tree1)
+	
+	int breadth_first2[] = Breadth_first_traversal(tree2)
+	
+	//ensures that the structure is correct. This might make the above 
+	//length and order check redundant.
+ 
+	if(breadth_first1 == breadth_first2)
+		return true
+	else
+	return false

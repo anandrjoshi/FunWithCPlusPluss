@@ -1,0 +1,12 @@
+Given some array such as {4, 2, 5, 3}, write a function that would take in the array 
+and a number that would return how many pairs add up to the number and also print them.
+
+Solution:
+O(n^2) solution is what is provided.
+
+O(nlogn) solution: sort the array which takes O(nlogn) best. then scan the array with two pointers
+to find target-arr[i] = arr[j]. this is O(n).
+
+O(n) solution: use hash map.
+hash the array into a hash table. then for each entry in array finf Hash(target-arr[i]) exists. this
+is O(n) only to scan through all the elements of the array.

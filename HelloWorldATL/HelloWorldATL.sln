@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HelloWorldATL", "HelloWorldATL\HelloWorldATL.vcxproj", "{FFBC7166-FA05-4915-B3C7-396D5CA1C3DD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HelloWorldATLPS", "HelloWorldATL\HelloWorldATLPS.vcxproj", "{A416BC60-0DB1-4564-9942-6933D263FEC2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{FFBC7166-FA05-4915-B3C7-396D5CA1C3DD} = {FFBC7166-FA05-4915-B3C7-396D5CA1C3DD}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FFBC7166-FA05-4915-B3C7-396D5CA1C3DD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FFBC7166-FA05-4915-B3C7-396D5CA1C3DD}.Debug|Win32.Build.0 = Debug|Win32
+		{FFBC7166-FA05-4915-B3C7-396D5CA1C3DD}.Release|Win32.ActiveCfg = Release|Win32
+		{FFBC7166-FA05-4915-B3C7-396D5CA1C3DD}.Release|Win32.Build.0 = Release|Win32
+		{A416BC60-0DB1-4564-9942-6933D263FEC2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A416BC60-0DB1-4564-9942-6933D263FEC2}.Release|Win32.ActiveCfg = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

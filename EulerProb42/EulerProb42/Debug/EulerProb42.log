@@ -1,0 +1,36 @@
+﻿Build started 8/10/2012 11:52:02 PM.
+     1>Project "F:\StudyMaterial\VS2010 Projects\Projects\EulerProb42\EulerProb42\EulerProb42.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\EulerProb42.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+     1>f:\studymaterial\vs2010 projects\projects\eulerprob42\eulerprob42\main.cpp(45): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(197) : see declaration of 'strtok'
+     1>f:\studymaterial\vs2010 projects\projects\eulerprob42\eulerprob42\main.cpp(52): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(197) : see declaration of 'strtok'
+     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(2227): warning C4996: 'std::_Copy_impl': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(2212) : see declaration of 'std::_Copy_impl'
+                 f:\studymaterial\vs2010 projects\projects\eulerprob42\eulerprob42\main.cpp(42) : see reference to function template instantiation '_OutIt std::copy<std::_String_iterator<_Elem,_Traits,_Alloc>,char*>(_InIt,_InIt,_OutIt)' being compiled
+                 with
+                 [
+                     _OutIt=char *,
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     _InIt=std::_String_iterator<char,std::char_traits<char>,std::allocator<char>>
+                 ]
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\StudyMaterial\VS2010 Projects\Projects\EulerProb42\Debug\EulerProb42.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\EulerProb42.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"F:\StudyMaterial\VS2010 Projects\Projects\EulerProb42\Debug\EulerProb42.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\StudyMaterial\VS2010 Projects\Projects\EulerProb42\Debug\EulerProb42.lib" /MACHINE:X86 Debug\main.obj
+         LINK : F:\StudyMaterial\VS2010 Projects\Projects\EulerProb42\Debug\EulerProb42.exe not found or not built by the last incremental link; performing full link
+         EulerProb42.vcxproj -> F:\StudyMaterial\VS2010 Projects\Projects\EulerProb42\Debug\EulerProb42.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"F:\StudyMaterial\VS2010 Projects\Projects\EulerProb42\Debug\EulerProb42.exe;#1" /manifest Debug\EulerProb42.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Debug\EulerProb42.unsuccessfulbuild".
+         Touching "Debug\EulerProb42.lastbuildstate".
+     1>Done Building Project "F:\StudyMaterial\VS2010 Projects\Projects\EulerProb42\EulerProb42\EulerProb42.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.05
