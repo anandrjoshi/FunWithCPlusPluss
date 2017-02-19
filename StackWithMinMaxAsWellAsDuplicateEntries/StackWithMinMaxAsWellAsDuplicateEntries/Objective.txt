@@ -1,0 +1,6 @@
+Objective:
+
+To implement a stack such that:
+a. Min and Max is found in O(1)
+b. Min and Max is updated with pop operation
+c. Duplication of Min, Max and other digits is allowed.

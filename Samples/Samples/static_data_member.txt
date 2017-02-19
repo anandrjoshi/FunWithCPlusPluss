@@ -1,0 +1,102 @@
+#include<iostream>
+using namespace std;
+
+class Simple_Class{
+public:
+	int dataMember;
+	//one copy of static data member is shared among all instances
+	static int staticDataMember;
+	Simple_Class(){
+		dataMember =0;
+	}
+	void show(){
+		cout<<"Simple_Class Data Member:"<<dataMember<<endl;
+		cout<<"Simple_Class Static Data Member:"<<staticDataMember<<endl;
+	}
+};
+//defining static data member , in the file scope
+int Simple_Class::staticDataMember =0;
+
+
+//class define constants 
+class Constants{
+public:
+	//only static integer constant can be intialized in the class
+	static const int ZERO = 0;
+	static const double PI ;
+};
+const double Constants::PI = 3.14;
+
+
+//only one object is created in singleton class
+class Singleton{
+private:
+
+	static Singleton* single;
+	//constructor is private
+	Singleton(){
+		cout<<"Singleton Constructor START"<<endl;
+		dataMember  = 0;
+		cout<<"Singleton Constructor END"<<endl;
+	}
+
+public:
+	int dataMember;
+	//methods returns the instance of the class
+	static Singleton* getInstance(){
+		if(single==NULL)
+			single = new Singleton();
+		return single;
+	}
+	void display(){
+		cout<<"Singleton Data Member: "<<dataMember<<endl;
+	}
+};
+Singleton* Singleton::single=NULL;
+
+
+void main(){
+	//first instance of simple class
+	Simple_Class* sClass_1 = new Simple_Class();
+	//accessing static variable by class instance
+	cout<<"Static value called by class instance 1:"<<sClass_1->staticDataMember<<endl;
+	cout<<"Address of the staticDatamember:"<<&sClass_1->staticDataMember<<endl;
+	//Assigning value to static data member and data member
+	sClass_1->staticDataMember = 100;
+	sClass_1->dataMember = 200;
+	sClass_1->dataMember;
+	delete sClass_1;
+	cout<<endl;
+	//second instance of simple class
+	Simple_Class* sClass_2 = new Simple_Class();
+	//accessing static variable by class instance
+	//staticDataMmber returns the last assigned value,thus proving only one copy of Static Data Member for the class
+	cout<<"Checking static value by class instance 2 after assigning by instance 1:"<<sClass_2->staticDataMember<<endl;
+	cout<<"Checking address of the staticDatamember:"<<&sClass_2->staticDataMember<<endl;
+	//dataMmber returns the new initialized value
+	cout<<"Checking dataMember of class instance 2:"<<sClass_2->staticDataMember<<endl;
+	sClass_2->dataMember;
+	delete sClass_2;
+	//calling staticDataMember without class instance but by Class name
+	cout<<"Static Data Member:"<<Simple_Class::staticDataMember<<endl;
+	cout<<endl;
+	//Checking the Constants
+	cout<<"Value of PI:"<<Constants::PI<<endl;
+	cout<<"Value of ZERO:"<<Constants::ZERO<<endl;
+	cout<<endl;
+
+	//creating instance of singleton class
+	//Check for the message in the constructor
+	Singleton* singleton_1 = Singleton::getInstance();
+	//check the dataMember value
+	singleton_1->display();
+	//assign value to dataMember
+	singleton_1->dataMember = 300;
+	cout<<endl;
+	//same instance is returned
+	Singleton* singleton_2 = Singleton::getInstance();
+	//check the dataMember value
+	singleton_2->display();
+
+
+}

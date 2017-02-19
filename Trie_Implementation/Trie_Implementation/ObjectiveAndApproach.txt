@@ -1,0 +1,61 @@
+======================
+Programming Problem - Find Longest Word Made of Other Words
+======================
+
+ 
+Write a program that reads a file containing a sorted list of words (one word per line, no spaces, all lower case), 
+then identifies the longestword in the file that can be constructed by concatenating copies of
+shorter words also found in the file.
+
+For example, if the file contained:
+
+       cat
+       cats
+       catsdogcats
+       catxdogcatsrat
+       dog
+       dogcatsdog
+       hippopotamuses
+       rat
+       ratcatdogcat
+
+The answer would be 'ratcatdogcat' - at 12 letters, it is the longest
+word made up of other words in the list.  The program should then
+go on to report how many of the words in the list can be constructed
+of other words in the list.
+
+======================
+Solution:
+======================
+
+Approach:
+I have decided to implement a Trie data structure to store that words that have already been seen thus far.
+This is essential as we need to know which words have been seen thus far so that we can use them to check if
+the given word is made of the words seen thus far.
+Trie is highly scalable as well as search time depends on depth of the trie. It als utilizes the fact that each
+word may be a prefix of other to save space required to save these words.
+
+The solution is made of two classes Node and Trie. Node is an individual node on the Trie while Trie is the
+collection of nodes. It also has a main function that iterates through the file and for each word, checks for
+longest word and second longest word, adds them on to the trie. Then at the end closes the file and diplays the
+longest and second longest words respectively.
+
+Result:
+On running the program on the words given in the text file, the program outputs following.
+Longest Word: electroencephalographically
+Second Longest Word: immunoelectrophoretically
+
+Note: Editor and compiler used Visual Studio 2010. 
+Folder Structure:
+
+Header Files
+  Node.h
+  Trie.h
+Resource Files
+  ObjectiveAndApproach.txt
+  temp.txt
+  words for problem.txt
+Source Files  
+  main.cpp
+  Node.cpp
+  Trie.cpp 

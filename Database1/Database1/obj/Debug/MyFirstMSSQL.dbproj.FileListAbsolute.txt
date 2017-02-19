@@ -1,0 +1,7 @@
+C:\Users\Anand Joshi\Documents\Visual Studio 2010\Projects\Database1\Database1\sql\debug\MyFirstMSSQL_Script.PreDeployment.sql
+C:\Users\Anand Joshi\Documents\Visual Studio 2010\Projects\Database1\Database1\sql\debug\MyFirstMSSQL_Script.PostDeployment.sql
+C:\Users\Anand Joshi\Documents\Visual Studio 2010\Projects\Database1\Database1\sql\debug\MyFirstMSSQL_Database.sqlsettings
+C:\Users\Anand Joshi\Documents\Visual Studio 2010\Projects\Database1\Database1\sql\debug\MyFirstMSSQL_Database.sqlcmdvars
+C:\Users\Anand Joshi\Documents\Visual Studio 2010\Projects\Database1\Database1\sql\debug\MyFirstMSSQL.deploymanifest
+C:\Users\Anand Joshi\Documents\Visual Studio 2010\Projects\Database1\Database1\sql\debug\MyFirstMSSQL.dbschema
+C:\Users\Anand Joshi\Documents\Visual Studio 2010\Projects\Database1\Database1\obj\Debug\MyFirstMSSQL.dbschema

@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="random_num_genereator.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="binary_files.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="static_member.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="static_data_member.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="virtual_function.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="inheritance.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="hash_code.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="F:\Study Material\Object Oriented Analysis and Design\exception\main_exception.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="F:\Study Material\Object Oriented Analysis and Design\Dictionary_Tree\Dictionary_Tree\Dictionary_Tree.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Downloads\Operator_Overloading\OperatorOverload_Class_Functions\OperatorOverload_Class_Functions\Array_overloading.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Downloads\Operator_Overloading\OperatorOverload_Class_Functions\OperatorOverload_Class_Functions\Array_overloading.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Study Material\Object Oriented Analysis and Design\friendfunctioncode\Example1.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Study Material\Object Oriented Analysis and Design\friendfunctioncode\Example2.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Study Material\Object Oriented Analysis and Design\friendfunctioncode\Example3.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Study Material\Object Oriented Analysis and Design\friendfunctioncode\Example4.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Study Material\Object Oriented Analysis and Design\Array2\Array.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Study Material\Object Oriented Analysis and Design\Array2\Array_main.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Study Material\Object Oriented Analysis and Design\exception\main_exception.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Study Material\Object Oriented Analysis and Design\namespace\container.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Study Material\Object Oriented Analysis and Design\namespace\main_namespace.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Study Material\Object Oriented Analysis and Design\namespace\main__namespace1.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Downloads\Operator_Overloading\OperatorOverload_Class_Functions\OperatorOverload_Class_Functions\Array_overloading.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Study Material\Object Oriented Analysis and Design\Operator_Overloading\OperatorOverload_Class_Functions\OperatorOverload_Class_Functions\array.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="F:\Study Material\Object Oriented Analysis and Design\Dictionary_Tree\Dictionary_Tree\Dictionary_Tree.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Study Material\Object Oriented Analysis and Design\Dictionary_Tree\Dictionary_Tree\Node.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Downloads\Operator_Overloading\OperatorOverload_Class_Functions\OperatorOverload_Class_Functions\array_overloading.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Study Material\Object Oriented Analysis and Design\Array2\Array.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Study Material\Object Oriented Analysis and Design\exception\exceptions.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Study Material\Object Oriented Analysis and Design\namespace\myheader.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

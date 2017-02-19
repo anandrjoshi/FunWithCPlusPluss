@@ -1,0 +1,5 @@
+c:\users\anand joshi\documents\visual studio 2010\Projects\testCCNet\testCCNet\bin\testCCNet.dll
+c:\users\anand joshi\documents\visual studio 2010\Projects\testCCNet\testCCNet\bin\testCCNet.pdb
+c:\users\anand joshi\documents\visual studio 2010\Projects\testCCNet\testCCNet\obj\Debug\ResolveAssemblyReference.cache
+c:\users\anand joshi\documents\visual studio 2010\Projects\testCCNet\testCCNet\obj\Debug\testCCNet.dll
+c:\users\anand joshi\documents\visual studio 2010\Projects\testCCNet\testCCNet\obj\Debug\testCCNet.pdb

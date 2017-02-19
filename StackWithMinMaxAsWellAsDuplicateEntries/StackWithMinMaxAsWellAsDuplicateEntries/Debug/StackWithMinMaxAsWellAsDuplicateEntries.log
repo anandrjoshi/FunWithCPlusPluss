@@ -1,0 +1,27 @@
+﻿Build started 6/26/2012 10:14:45 PM.
+     1>Project "F:\StudyMaterial\VS2010 Projects\Projects\StackWithMinMaxAsWellAsDuplicateEntries\StackWithMinMaxAsWellAsDuplicateEntries\StackWithMinMaxAsWellAsDuplicateEntries.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\StackWithMinMaxAsWellAsDuplicateEntries.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Stack.cpp
+         Stack.cpp
+     1>f:\studymaterial\vs2010 projects\projects\stackwithminmaxaswellasduplicateentries\stackwithminmaxaswellasduplicateentries\stack.cpp(64): warning C4018: '<' : signed/unsigned mismatch
+     1>f:\studymaterial\vs2010 projects\projects\stackwithminmaxaswellasduplicateentries\stackwithminmaxaswellasduplicateentries\stack.cpp(98): warning C4018: '<' : signed/unsigned mismatch
+     1>f:\studymaterial\vs2010 projects\projects\stackwithminmaxaswellasduplicateentries\stackwithminmaxaswellasduplicateentries\stack.cpp(112): warning C4018: '<' : signed/unsigned mismatch
+     1>f:\studymaterial\vs2010 projects\projects\stackwithminmaxaswellasduplicateentries\stackwithminmaxaswellasduplicateentries\stack.cpp(136): warning C4018: '<' : signed/unsigned mismatch
+     1>f:\studymaterial\vs2010 projects\projects\stackwithminmaxaswellasduplicateentries\stackwithminmaxaswellasduplicateentries\stack.cpp(151): warning C4018: '<' : signed/unsigned mismatch
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\StudyMaterial\VS2010 Projects\Projects\StackWithMinMaxAsWellAsDuplicateEntries\Debug\StackWithMinMaxAsWellAsDuplicateEntries.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\StackWithMinMaxAsWellAsDuplicateEntries.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"F:\StudyMaterial\VS2010 Projects\Projects\StackWithMinMaxAsWellAsDuplicateEntries\Debug\StackWithMinMaxAsWellAsDuplicateEntries.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\StudyMaterial\VS2010 Projects\Projects\StackWithMinMaxAsWellAsDuplicateEntries\Debug\StackWithMinMaxAsWellAsDuplicateEntries.lib" /MACHINE:X86 Debug\main.obj
+         Debug\Stack.obj
+         LINK : F:\StudyMaterial\VS2010 Projects\Projects\StackWithMinMaxAsWellAsDuplicateEntries\Debug\StackWithMinMaxAsWellAsDuplicateEntries.exe not found or not built by the last incremental link; performing full link
+         StackWithMinMaxAsWellAsDuplicateEntries.vcxproj -> F:\StudyMaterial\VS2010 Projects\Projects\StackWithMinMaxAsWellAsDuplicateEntries\Debug\StackWithMinMaxAsWellAsDuplicateEntries.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"F:\StudyMaterial\VS2010 Projects\Projects\StackWithMinMaxAsWellAsDuplicateEntries\Debug\StackWithMinMaxAsWellAsDuplicateEntries.exe;#1" /manifest Debug\StackWithMinMaxAsWellAsDuplicateEntries.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Debug\StackWithMinMaxAsWellAsDuplicateEntries.unsuccessfulbuild".
+         Touching "Debug\StackWithMinMaxAsWellAsDuplicateEntries.lastbuildstate".
+     1>Done Building Project "F:\StudyMaterial\VS2010 Projects\Projects\StackWithMinMaxAsWellAsDuplicateEntries\StackWithMinMaxAsWellAsDuplicateEntries\StackWithMinMaxAsWellAsDuplicateEntries.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.87

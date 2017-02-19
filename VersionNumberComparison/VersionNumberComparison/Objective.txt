@@ -1,0 +1,4 @@
+Given two version numbers(with multiple decimals) determine which one is greater.
+-1 if version 1 greater than version 2
+1 if version 2 greater than version 1
+0 if versions are equal.

@@ -1,0 +1,5 @@
+C:\Users\Anand Joshi\Documents\Visual Studio 2010\Projects\AgileDevelopment\AgileDevelopment\bin\AgileDevelopment.dll
+C:\Users\Anand Joshi\Documents\Visual Studio 2010\Projects\AgileDevelopment\AgileDevelopment\bin\AgileDevelopment.pdb
+C:\Users\Anand Joshi\Documents\Visual Studio 2010\Projects\AgileDevelopment\AgileDevelopment\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Anand Joshi\Documents\Visual Studio 2010\Projects\AgileDevelopment\AgileDevelopment\obj\Debug\AgileDevelopment.dll
+C:\Users\Anand Joshi\Documents\Visual Studio 2010\Projects\AgileDevelopment\AgileDevelopment\obj\Debug\AgileDevelopment.pdb

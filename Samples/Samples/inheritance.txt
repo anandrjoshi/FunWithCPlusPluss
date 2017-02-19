@@ -1,0 +1,66 @@
+# include<iostream>
+
+using namespace std;
+
+
+class Base_Class
+{
+protected:
+
+	int a;
+	
+public:
+	Base_Class()
+	{
+		cout<<"Base_Class CONSTRUCTOR START\n";
+		a=3;
+		cout<<"Base_Class CONSTRUCTOR END\n";
+	}
+
+	~Base_Class(){	cout<<"Base_Class DESTRUCTOR START\n";	}
+
+	virtual void f(){cout<<"Base_Class_function f()"<<endl;	}
+
+	void x()
+	{
+		cout<<"Base_Class_function x() START"<<endl;
+		f();
+		cout<<"Base_Class_function x() END"<<endl;
+	}
+};
+
+//--------------------------------------------------------------------------
+
+
+class Derived_Class: public Base_Class
+{
+public:
+	void f(){cout<<"Derived_Class_function f()"<<endl;	}
+
+};
+
+
+void main()
+{
+	Derived_Class * w = new Derived_Class();
+
+	w->f();
+
+cout<<"====================================\n";
+
+	w->x();
+
+cout<<"wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww\n";
+
+/*	Base_Class * ww = new Base_Class();
+
+	ww->f();
+
+cout<<"=======================\n";
+
+	ww->x();
+
+*/
+	delete w;
+
+}

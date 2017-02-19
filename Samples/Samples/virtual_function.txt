@@ -1,0 +1,90 @@
+#include<iostream>
+
+using namespace std;
+
+class Base_Class
+{
+protected:
+	int a;
+
+public:
+
+Base_Class()
+{
+	cout<<"Base_Class EMPTY Constructor START"<<endl;
+	a=0;	
+	cout<<"Base_Class EMPTY Constructor END"<<endl;
+}
+
+Base_Class(int _a)
+{
+	cout<<"Base_Class  Constructor START"<<endl;
+	a=_a;	
+	cout<<"Base_Class  Constructor END"<<endl;
+
+}
+
+virtual ~Base_Class()
+{
+	cout<<"Base_Class  destructor"<<endl;
+}
+
+	void set_value(int _a) {a=_a;}
+	int get_value() {return a;}
+
+};
+
+class Derived_Class: public Base_Class
+{
+public:	
+	int b;
+	void set_value(int _a, int _b) {a=_a+100; b=_b+100;}
+
+
+Derived_Class()
+{
+	cout<<"Derived_Class  Constructor START"<<endl;
+	b=99;	
+	cout<<"Derived_Class  Constructor END"<<endl;	
+}
+
+Derived_Class(int _a, int _b):Base_Class(_a)
+{
+	cout<<"Derived_Class  Constructor START"<<endl;
+	b=_b;	
+	cout<<"Derived_Class  Constructor END"<<endl;	
+}
+
+Derived_Class(int _b):Base_Class()
+{
+	cout<<"Derived_Class  Constructor START"<<endl;
+	b=_b;	
+	cout<<"Derived_Class  Constructor END"<<endl;	
+}
+
+
+~Derived_Class()
+{
+	cout<<"Derived_Class  destructor"<<endl;
+}
+
+
+Derived_Class(double _z)
+{
+	cout<<"Derived_Class  Constructor ZZZZZ START"<<endl;
+	cout<<"Derived_Class  Constructor ZZZZZ END"<<endl;	
+}
+
+
+};
+
+
+void main()
+{
+	Derived_Class * x = new Derived_Class(42.0);
+
+	cout<<"a="<<x->get_value()<<endl;
+	cout<<"b="<<x->b<<endl;
+
+	delete x;
+}

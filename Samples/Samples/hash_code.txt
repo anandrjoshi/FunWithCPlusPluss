@@ -1,0 +1,341 @@
+/*
+Implement a hash which will do following things:
+1. Store positive integers (>=1).
+2. max number of values to be stored is known.
+3. no values will be ever deleted fron the hash!!!!
+
+Funtionality:
+3. Add values
+4. Search for value
+5. Values sored in the hash table.
+*/
+
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+
+class PIV_Hash
+{
+protected:
+	unsigned int * value;
+	unsigned int array_size;
+	double to_be_populated;
+
+	unsigned int number_of_values_present;
+	unsigned int collision_counter;
+
+public:
+	PIV_Hash(unsigned int _number_of_values_to_be_stored, double _to_be_populated=0.25);
+	PIV_Hash(char * _file_name, double _to_be_populated=0.25);
+	PIV_Hash(PIV_Hash * piv_hash, double _to_be_populated=0.25);
+	~PIV_Hash();
+
+	////////////// Member Functions
+	bool add_Value(unsigned int _value);
+	bool find_Value(unsigned int _value);
+	bool write_to_File(char * _filename);
+
+	/////////////////////////////////////////////////// <- use if something goes wrong
+	unsigned int get_Collision_Counter() {return collision_counter;};
+	unsigned int get_Array_Size() {return array_size;};
+	unsigned int get_Number_of_Values_Present() {return number_of_values_present;};
+	unsigned int get_Value(unsigned int _location){return value[_location];};
+};
+
+//--------------------------------------------------------------------------------------------------------------------//
+//--------------------------------------------------------------------------------------------------------------------//
+
+PIV_Hash::PIV_Hash(unsigned int _number_of_values_to_be_stored, double _to_be_populated)
+{
+	array_size = 0;
+	collision_counter = 0;
+	number_of_values_present = 0;
+	to_be_populated = 0;
+	value = NULL;
+
+	if(_number_of_values_to_be_stored == 0)
+	{
+		cout<<"WARNING: Number of Values to be stored is equal 0 and was defaulted to 10"<<endl<<"Number of Values to be Stored is = "<<_number_of_values_to_be_stored<<endl;
+		_number_of_values_to_be_stored = 10;						// default
+	}
+	if(_to_be_populated >= 0.8 || _to_be_populated <= 0.01)
+	{
+		cout<<"WARNING: % to be Populated is either too high or too low and was defaulted to 0.25"<<endl<<"% to be Populated is = "<<_to_be_populated<<endl;
+		_to_be_populated = 0.25;
+	}
+	array_size = _number_of_values_to_be_stored/_to_be_populated;  // cases to take care of _number_of_values_to_be_store != 0 && _to_be_populated < 0.8
+	value = new unsigned int [array_size];
+	if(value == NULL)
+	{
+		cout<<"ERROR: Allocation of memory was not succesful"<<endl;
+		array_size = 0;
+		return;
+	}
+	unsigned int i;
+	for (i=0;i<array_size;i++)
+	{
+		value[i] = 0;
+	}
+
+	to_be_populated = _to_be_populated;
+
+	if (number_of_values_present/array_size > to_be_populated)
+	{
+		cout << "WARNING! ARRAY IS TOO FULL! Actual Population (" << number_of_values_present/array_size << ") > to_be_populated (" << to_be_populated << ")." << endl;
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------//
+
+
+PIV_Hash::PIV_Hash(char * _file_name, double _to_be_populated)
+{
+	array_size = 0;
+	collision_counter = 0;
+	number_of_values_present = 0;
+	to_be_populated = 0;
+	value = NULL;
+
+	if(_to_be_populated >= 0.8 || _to_be_populated <= 0.01)
+	{
+		cout<<"WARNING: % to be Populated is either too high or too low, default = 0.25"<<endl<<"% to be Populated was = "<<_to_be_populated<<endl;
+		_to_be_populated = 0.25;
+	}
+
+	ifstream inputFile;
+	inputFile.open(_file_name);
+
+	if (!inputFile.is_open())
+	{
+		cout << "ERROR! inputFile.is_open() == false"<< endl;
+		return;
+	}
+	unsigned int _number_of_values_present;
+	inputFile >> _number_of_values_present;
+
+	unsigned int _number_of_values_to_be_stored = _number_of_values_present;
+
+	if(_number_of_values_to_be_stored == 0)
+	{
+		cout<<"WARNING: number_of_values_present = 0, default = 10"<<endl;
+		_number_of_values_to_be_stored = 10;
+	}
+
+	array_size = _number_of_values_to_be_stored/_to_be_populated;
+	value = new unsigned int [array_size];
+	if(value == NULL)
+	{
+		cout<<"ERROR: Allocation of memory was not succesful"<<endl;
+		array_size = 0;
+		return;
+	}
+
+	to_be_populated = _to_be_populated;
+
+	unsigned int i;
+	unsigned int _value;
+
+	for(i=0;i<_number_of_values_present;i++)
+	{
+		inputFile >> _value;
+		if(!add_Value(_value))
+		{
+			cout<<"ERROR: add_Value(_value) == false"<<endl;
+			array_size = 0;
+			delete [] value;
+			value = NULL;
+			inputFile.close();
+			return;
+		}
+	}
+
+	inputFile.close();
+}
+
+//--------------------------------------------------------------------------------------------------------------------//
+
+PIV_Hash::PIV_Hash(PIV_Hash * piv_hash, double _to_be_populated)
+{
+	array_size = 0;
+	collision_counter = 0;
+	number_of_values_present = 0;
+	to_be_populated = 0;
+	value = NULL;
+
+	if(piv_hash == NULL)
+	{
+		cout<<"ERROR: piv_hash ==NULL"<<endl;
+		return;
+	}
+
+
+	if(_to_be_populated >= 0.8 || _to_be_populated <= 0.01)
+	{
+		cout<<"WARNING: % to be Populated is either too high or too low, default = 0.25"<<endl<<"% to be Populated was = "<<_to_be_populated<<endl;
+		_to_be_populated = 0.25;
+	}
+
+	unsigned int _number_of_values_present;
+	_number_of_values_present = piv_hash->get_Number_of_Values_Present();
+
+	unsigned int _number_of_values_to_be_stored = _number_of_values_present;
+
+	if(_number_of_values_to_be_stored == 0)
+	{
+		cout<<"WARNING: number_of_values_present = 0, default = 10"<<endl;
+		_number_of_values_to_be_stored = 10;
+	}
+
+	array_size = _number_of_values_to_be_stored/_to_be_populated;
+	value = new unsigned int [array_size];
+	if(value == NULL)
+	{
+		cout<<"ERROR: Allocation of memory was not succesful"<<endl;
+		array_size = 0;
+		return;
+	}
+
+	to_be_populated = _to_be_populated;
+
+	unsigned int i;
+
+	for(i=0;i<piv_hash->get_Array_Size();i++)
+	{
+		if(piv_hash->value[i]==0) continue;
+		if(!add_Value(piv_hash->value[i]))
+		{
+			cout<<"ERROR: add_Value(_value) == false"<<endl;
+			array_size = 0;
+			delete [] value;
+			value = NULL;
+			return;
+		}
+	}
+
+}
+
+//--------------------------------------------------------------------------------------------------------------------//
+
+PIV_Hash::~PIV_Hash()
+{
+	if(value != NULL)
+	{
+		delete [] value;
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------//
+
+
+bool PIV_Hash::add_Value(unsigned int _value)
+{
+	collision_counter = 0;
+	if(_value == 0)
+	{
+		cout << "ERROR! _value == 0!"<< endl;
+		cout << "add_Value operation not possible" << endl;
+		return false;
+	}
+
+	if (number_of_values_present/array_size > 0.9)
+	{
+		cout << "ERROR! ARRAY IS TOO FULL! Actual Population (" << number_of_values_present/array_size << ") > to_be_populated (" << to_be_populated << ")." << endl;
+		cout << "add_Value operation not possible" << endl;
+		return false;
+	}
+
+	if (number_of_values_present/array_size > to_be_populated)
+	{
+		cout << "WARNING! ARRAY IS TOO FULL! Actual Population (" << number_of_values_present/array_size << ") > to_be_populated (" << to_be_populated << ")." << endl;
+		cout << "add_Value operation not possible" << endl;
+		return false;
+	}
+
+	unsigned int index;
+	index = _value % array_size;
+	if(value[index] == 0)
+	{
+		value[index] = _value;
+		number_of_values_present ++;
+		return true;
+	}
+
+	collision_counter = 1;
+	for(;;)
+	{
+		index ++;
+		if(index >= array_size) index=0;
+
+		if(value[index] != 0)
+		{
+			collision_counter ++;
+			continue;
+		}
+		number_of_values_present++;
+		value[index]=_value;
+		return true;
+	}
+	return false;
+}
+
+//--------------------------------------------------------------------------------------------------------------------//
+
+
+bool PIV_Hash::find_Value(unsigned int _value)
+{
+	collision_counter = 0;
+	if(_value == 0)
+	{
+		cout << "ERROR! _value == 0!"<< endl;
+		cout << "find_Value operation not possible" << endl;
+		return false;
+	}
+
+	unsigned int index;
+	index = _value % array_size;
+
+	if(value[index] == 0) return false;
+	if(value[index] == _value)return true;
+
+	for(;;)
+	{
+		collision_counter++;
+		index ++;
+		if(index >= array_size) index=0;
+
+		if(value[index] == 0) return false;
+		if(value[index] == _value) return true;
+	}
+	return false;//////??????
+}
+
+//--------------------------------------------------------------------------------------------------------------------//
+
+
+bool PIV_Hash::write_to_File(char * _filename)
+{
+	ofstream output;
+	output.open(_filename);
+
+	if(!output.is_open())
+	{
+		cout << "ERROR! output.is_open() == false"<< endl;
+		return false;
+	}
+														//File Format:  number_of_values_present
+	output << number_of_values_present << endl;			//			    value 1
+														//				value 2
+	unsigned int i;										//				value 3
+	for (i = 0; i < array_size; i++)					//				etc...
+	{
+		if(value[i] != 0) output << value[i] << endl;
+	}
+	output.close();
+	return true;
+}
+
+//--------------------------------------------------------------------------------------------------------------------//
+//--------------------------------------------------------------------------------------------------------------------//
+//--------------------------------------------------------------------------------------------------------------------//
+//--------------------------------------------------------------------------------------------------------------------//

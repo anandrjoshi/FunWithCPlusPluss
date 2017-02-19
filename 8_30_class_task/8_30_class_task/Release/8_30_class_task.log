@@ -1,0 +1,174 @@
+﻿Build started 8/30/2011 5:59:45 PM.
+     1>Project "C:\Users\Anand Joshi\Documents\Visual Studio 2010\Projects\8_30_class_task\8_30_class_task\8_30_class_task.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Release\8_30_class_task.unsuccessfulbuild".
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+     1>main.cpp(11): error C2678: binary '>>' : no operator found which takes a left-hand operand of type 'std::basic_istream<_Elem,_Traits>' (or there is no acceptable conversion)
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>
+                 ]
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\istream(1053): could be 'std::basic_istream<_Elem,_Traits> &std::operator >><std::char_traits<char>>(std::basic_istream<_Elem,_Traits> &&,signed char *)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>
+                 ]
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\istream(1060): or       'std::basic_istream<_Elem,_Traits> &std::operator >><std::char_traits<char>>(std::basic_istream<_Elem,_Traits> &&,signed char &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>
+                 ]
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\istream(1067): or       'std::basic_istream<_Elem,_Traits> &std::operator >><std::char_traits<char>>(std::basic_istream<_Elem,_Traits> &&,unsigned char *)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>
+                 ]
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\istream(1074): or       'std::basic_istream<_Elem,_Traits> &std::operator >><std::char_traits<char>>(std::basic_istream<_Elem,_Traits> &&,unsigned char &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>
+                 ]
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\istream(1097): or       'std::basic_istream<_Elem,_Traits> &std::operator >><std::char_traits<char>>(std::basic_istream<_Elem,_Traits> &,signed char *)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>
+                 ]
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\istream(1104): or       'std::basic_istream<_Elem,_Traits> &std::operator >><std::char_traits<char>>(std::basic_istream<_Elem,_Traits> &,signed char &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>
+                 ]
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\istream(1111): or       'std::basic_istream<_Elem,_Traits> &std::operator >><std::char_traits<char>>(std::basic_istream<_Elem,_Traits> &,unsigned char *)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>
+                 ]
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\istream(1118): or       'std::basic_istream<_Elem,_Traits> &std::operator >><std::char_traits<char>>(std::basic_istream<_Elem,_Traits> &,unsigned char &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>
+                 ]
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\istream(179): or       'std::basic_istream<_Elem,_Traits> &std::basic_istream<_Elem,_Traits>::operator >>(std::basic_istream<_Elem,_Traits> &(__cdecl *)(std::basic_istream<_Elem,_Traits> &))'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>
+                 ]
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\istream(185): or       'std::basic_istream<_Elem,_Traits> &std::basic_istream<_Elem,_Traits>::operator >>(std::basic_ios<_Elem,_Traits> &(__cdecl *)(std::basic_ios<_Elem,_Traits> &))'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>
+                 ]
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\istream(192): or       'std::basic_istream<_Elem,_Traits> &std::basic_istream<_Elem,_Traits>::operator >>(std::ios_base &(__cdecl *)(std::ios_base &))'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>
+                 ]
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\istream(199): or       'std::basic_istream<_Elem,_Traits> &std::basic_istream<_Elem,_Traits>::operator >>(std::_Bool &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>
+                 ]
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\istream(218): or       'std::basic_istream<_Elem,_Traits> &std::basic_istream<_Elem,_Traits>::operator >>(short &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>
+                 ]
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\istream(253): or       'std::basic_istream<_Elem,_Traits> &std::basic_istream<_Elem,_Traits>::operator >>(unsigned short &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>
+                 ]
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\istream(272): or       'std::basic_istream<_Elem,_Traits> &std::basic_istream<_Elem,_Traits>::operator >>(int &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>
+                 ]
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\istream(298): or       'std::basic_istream<_Elem,_Traits> &std::basic_istream<_Elem,_Traits>::operator >>(unsigned int &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>
+                 ]
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\istream(316): or       'std::basic_istream<_Elem,_Traits> &std::basic_istream<_Elem,_Traits>::operator >>(long &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>
+                 ]
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\istream(334): or       'std::basic_istream<_Elem,_Traits> &std::basic_istream<_Elem,_Traits>::operator >>(unsigned long &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>
+                 ]
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\istream(354): or       'std::basic_istream<_Elem,_Traits> &std::basic_istream<_Elem,_Traits>::operator >>(__int64 &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>
+                 ]
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\istream(373): or       'std::basic_istream<_Elem,_Traits> &std::basic_istream<_Elem,_Traits>::operator >>(unsigned __int64 &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>
+                 ]
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\istream(392): or       'std::basic_istream<_Elem,_Traits> &std::basic_istream<_Elem,_Traits>::operator >>(float &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>
+                 ]
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\istream(411): or       'std::basic_istream<_Elem,_Traits> &std::basic_istream<_Elem,_Traits>::operator >>(double &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>
+                 ]
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\istream(429): or       'std::basic_istream<_Elem,_Traits> &std::basic_istream<_Elem,_Traits>::operator >>(long double &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>
+                 ]
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\istream(447): or       'std::basic_istream<_Elem,_Traits> &std::basic_istream<_Elem,_Traits>::operator >>(void *&)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>
+                 ]
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\istream(466): or       'std::basic_istream<_Elem,_Traits> &std::basic_istream<_Elem,_Traits>::operator >>(std::basic_streambuf<_Elem,_Traits> *)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>
+                 ]
+                 while trying to match the argument list '(std::basic_istream<_Elem,_Traits>, overloaded-function)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>
+                 ]
+     1>Done Building Project "C:\Users\Anand Joshi\Documents\Visual Studio 2010\Projects\8_30_class_task\8_30_class_task\8_30_class_task.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.90

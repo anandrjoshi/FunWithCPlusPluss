@@ -1,0 +1,58 @@
+/*
+Class members that are declared using storage specifier static are called static members, only one copy of it is shared by all the objects of the class in a program.  
+You can access a static member by qualifying the class name using ::(scope resolutions) operator.
+
+Two things to remember when using static member functions,
+1. We cannot use 'this' pointer in a static member function or refer a static member function using 'this' operator
+2. a static member function can only use static variables
+
+Few Points -
+1. We can not have static and non static member functions with same return type, function name and arguments in the same class
+2. static functions cannot be declared virtual, const or volatile
+3. We cannot have a static constructor (if we try to create one, it gives a compile time error)
+4. we can have private static member functions and they can only be used with in the same class
+
+Risks of using static member functions,
+1. Violation to encapsulation
+2. We cannot have multiple copies of the same object
+
+References:
+http://publib.boulder.ibm.com/infocenter/comphelp/v8v101/index.jsp?topic=%2Fcom.ibm.xlcpp8a.doc%2Flanguage%2Fref%2Fcplr039.htm
+http://www.learncpp.com/cpp-tutorial/812-static-member-functions/
+*/
+
+#include<iostream>
+using namespace std;
+
+class Math{
+public:
+	static int s;
+	//a static function to add two numbers
+	static int add(int a,int b){
+		Math::s=(a+b); //accessing a static data member in a static function
+		return Math::s;
+	}
+};
+
+//initializing a data member
+int Math::s=0;
+
+void main(){
+
+	//calling a member function, we use the scope resolution operator
+	cout<<"Math::add(10,10) : "<<Math::add(10,10)<<endl; //1st way of calling the function
+
+	Math *obj=new Math();
+	cout<<"obj->add(10,10) : "<<obj->add(10,10)<<endl; //2nd way of calling the function, this is the routine way
+	
+	//checking if the same function is being called
+	int (*f)(int,int); //we defined a function pointer f
+	f=Math::add;
+	cout<<"Address of a function : "<<f<<endl;
+	
+	Math *ptr=new Math(); //we are creating an object to the class
+	f=ptr->add;
+	cout<<"Address of a function : "<<f<<endl;
+	
+	system("PAUSE");
+}

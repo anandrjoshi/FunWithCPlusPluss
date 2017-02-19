@@ -1,0 +1,45 @@
+﻿Build started 11/19/2010 8:59:07 PM.
+     1>Project "C:\Users\Anand Joshi\Documents\Visual Studio 2010\Projects\MSG_Foundation\MSG_Foundation\MSG_Foundation.vcxproj" on node 2 (build target(s)).
+     1>PrepareForBuild:
+         Creating directory "C:\Users\Anand Joshi\Documents\Visual Studio 2010\Projects\MSG_Foundation\Debug\".
+       InitializeBuildStatus:
+         Creating "Debug\MSG_Foundation.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\MSG_case_study_cpp\Asset.cpp ..\..\MSG_case_study_cpp\AssetManager.cpp ..\..\MSG_case_study_cpp\EstimatedFundsReport.cpp ..\..\MSG_case_study_cpp\EstimateFundsForWeek.cpp ..\..\MSG_case_study_cpp\Investment.cpp ..\..\MSG_case_study_cpp\InvestmentReport.cpp ..\..\MSG_case_study_cpp\Mortgage.cpp ..\..\MSG_case_study_cpp\MortgageReport.cpp ..\..\MSG_case_study_cpp\MSG.cpp ..\..\MSG_case_study_cpp\OperatingExpenses.cpp ..\..\MSG_case_study_cpp\stdafx.cpp ..\..\MSG_case_study_cpp\UserInterface.cpp
+         UserInterface.cpp
+         stdafx.cpp
+         OperatingExpenses.cpp
+         MSG.cpp
+         MortgageReport.cpp
+         Mortgage.cpp
+         InvestmentReport.cpp
+         Investment.cpp
+         EstimateFundsForWeek.cpp
+         EstimatedFundsReport.cpp
+         AssetManager.cpp
+         Asset.cpp
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Anand Joshi\Documents\Visual Studio 2010\Projects\MSG_Foundation\Debug\MSG_Foundation.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\MSG_Foundation.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Anand Joshi\Documents\Visual Studio 2010\Projects\MSG_Foundation\Debug\MSG_Foundation.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Anand Joshi\Documents\Visual Studio 2010\Projects\MSG_Foundation\Debug\MSG_Foundation.lib" /MACHINE:X86 Debug\Asset.obj
+         Debug\AssetManager.obj
+         Debug\EstimatedFundsReport.obj
+         Debug\EstimateFundsForWeek.obj
+         Debug\Investment.obj
+         Debug\InvestmentReport.obj
+         Debug\Mortgage.obj
+         Debug\MortgageReport.obj
+         Debug\MSG.obj
+         Debug\OperatingExpenses.obj
+         Debug\stdafx.obj
+         Debug\UserInterface.obj
+         MSG_Foundation.vcxproj -> C:\Users\Anand Joshi\Documents\Visual Studio 2010\Projects\MSG_Foundation\Debug\MSG_Foundation.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\Anand Joshi\Documents\Visual Studio 2010\Projects\MSG_Foundation\Debug\MSG_Foundation.exe;#1" /manifest Debug\MSG_Foundation.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Debug\MSG_Foundation.unsuccessfulbuild".
+         Touching "Debug\MSG_Foundation.lastbuildstate".
+     1>Done Building Project "C:\Users\Anand Joshi\Documents\Visual Studio 2010\Projects\MSG_Foundation\MSG_Foundation\MSG_Foundation.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:13.20

@@ -1,0 +1,14 @@
+c:\users\anand joshi\documents\visual studio 2010\Projects\StringOperations\StringOperations\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\anand joshi\documents\visual studio 2010\Projects\StringOperations\StringOperations\obj\x86\Debug\StringOperations.Example.resources
+c:\users\anand joshi\documents\visual studio 2010\Projects\StringOperations\StringOperations\obj\x86\Debug\StringOperations.Resources.resources
+c:\users\anand joshi\documents\visual studio 2010\Projects\StringOperations\StringOperations\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\users\anand joshi\documents\visual studio 2010\Projects\StringOperations\StringOperations\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\users\anand joshi\documents\visual studio 2010\Projects\StringOperations\StringOperations\bin\Debug\StringOperations.exe
+c:\users\anand joshi\documents\visual studio 2010\Projects\StringOperations\StringOperations\bin\Debug\StringOperations.pdb
+c:\users\anand joshi\documents\visual studio 2010\Projects\StringOperations\StringOperations\bin\Debug\StringOperations.xml
+c:\users\anand joshi\documents\visual studio 2010\Projects\StringOperations\StringOperations\obj\x86\Debug\StringOperations.exe
+c:\users\anand joshi\documents\visual studio 2010\Projects\StringOperations\StringOperations\obj\x86\Debug\StringOperations.xml
+c:\users\anand joshi\documents\visual studio 2010\Projects\StringOperations\StringOperations\obj\x86\Debug\StringOperations.pdb
+F:\StudyMaterial\VS2010_Projects\Projects\StringOperations\StringOperations\obj\x86\Debug\StringOperations.exe
+F:\StudyMaterial\VS2010_Projects\Projects\StringOperations\StringOperations\obj\x86\Debug\StringOperations.xml
+F:\StudyMaterial\VS2010_Projects\Projects\StringOperations\StringOperations\obj\x86\Debug\StringOperations.pdb

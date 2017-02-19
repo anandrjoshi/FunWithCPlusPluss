@@ -1,0 +1,32 @@
+#include <iostream>
+#include "time.h"
+
+using namespace std;
+
+void main ()
+{
+
+	srand(time(NULL)); //seed for rand
+	int x = rand() % 1000; //initial random number not very 'random'
+
+	int y = rand() % 1000000; //no error, but doesn't work
+	int z = rand() % 1000000;
+
+	int limit = RAND_MAX; //upper limit for compiler's random numbers (32767)
+
+	limit = ((RAND_MAX/1000)*1000); //define new limit without tail
+
+	while (true) //shoot until number within limit is hit
+        {
+        x = rand();
+        if (x <= limit)
+            {
+                break;
+            }
+        }
+
+	x = x %1000; //now compute modulo on it to get desired random number
+
+cin.get();
+
+}
